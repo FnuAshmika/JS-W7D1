@@ -35,3 +35,31 @@ console.log(replaceEvens(arr))
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"]
+
+// Task codewars
+// Write a function that returns both the minimum and maximum number of the given list/array.
+
+function minMax(arr){
+    let min = arr[0];
+    let max = arr[0];
+  
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < min) {
+        min = arr[i];
+      } else if (arr[i] > max) {
+        max = arr[i];
+      }
+    }
+  
+    return [min, max]; 
+  }
+
+//   Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+function evenOrOdd(number) {
+    if (number % 2 === 0) {
+     return "Even"
+   } else {
+     return "Odd"
+   }
+ }
